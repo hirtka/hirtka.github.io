@@ -1,1 +1,0 @@
-# hirtka.github.io
