@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
-<html lang="en" data-figures="">
+<html lang="en" data-figures="true" class="page">
   <head>
-<title>Categories | Techopper&#39;s tech blog</title>
+<title>Visual Studio CodeでWSL2上のRustをDebug実行するには | Techopper&#39;s tech blog</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,21 +10,20 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="">
+<meta name="description" content="Visual Studio CodeでWSL2上のRustをDebug実行するには">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="Categories" />
-<meta property="og:url" content="https://hirtka.github.io/categories/" />
-<meta property="og:title" content="Categories" />
-<meta property="og:description" content="" />
-<meta property="og:image" content="https://hirtka.github.io/" />
+<meta name="twitter:title" content="Visual Studio CodeでWSL2上のRustをDebug実行するには" />
+<meta property="og:url" content="https://hirtka.github.io/post/vscode-wsl2-rust-debug/" />
+<meta property="og:title" content="Visual Studio CodeでWSL2上のRustをDebug実行するには" />
+<meta property="og:description" content="Visual Studio CodeでWSL2上のRustをDebug実行するには" />
+<meta property="og:image" content="https://hirtka.github.io/post/vscode-wsl2-rust-debug/images/vscode-wsl2-rust-debug/vscode-debugging.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://hirtka.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://hirtka.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://hirtka.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://hirtka.github.io/categories/">
-<link rel="alternate" type="application/rss+xml" href="https://hirtka.github.io/categories/index.xml" title="Techopper's tech blog" />
+<link rel="canonical" href="https://hirtka.github.io/post/vscode-wsl2-rust-debug/">
 
     
 
@@ -41,8 +40,9 @@
   
   
     
+    
   
-  <body data-code="100" data-lines="false" id="documentTop">
+  <body data-code="10" data-lines="false" id="documentTop">
 
 <header class="nav_header" >
   <nav class="nav"><a href='https://hirtka.github.io/' class="nav_brand nav_item" title="Techopper&#39;s tech blog">Techopper&#39;s tech blog
@@ -74,32 +74,30 @@
 </header>
 
     <main>
-
+  
 <div class="grid-inverse wrap content">
-  <ul class="posts" id="posts">
-      <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://hirtka.github.io/categories/technology/" title="Technology">Technology</a>
-      </h3>
-      
+  <article class="post_content">
+    <h1 class="post_title">Visual Studio CodeでWSL2上のRustをDebug実行するには</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <use xlink:href="#calendar"></use>
 </svg></span>
     <span class="post_date">
       Jan 10, 2022</span>
-    <span class="post_time"> · 0 min read</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://hirtka.github.io/tags/vscode' title="vscode" class="post_tag button button_translucent">vscode
+        </a><a href='https://hirtka.github.io/tags/wsl' title="wsl" class="post_tag button button_translucent">wsl
+        </a><a href='https://hirtka.github.io/tags/rust' title="Rust" class="post_tag button button_translucent">Rust
+        </a>
+    </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Technology&url=https%3a%2f%2fhirtka.github.io%2fcategories%2ftechnology%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Visual%20Studio%20Code%e3%81%a7WSL2%e4%b8%8a%e3%81%aeRust%e3%82%92Debug%e5%ae%9f%e8%a1%8c%e3%81%99%e3%82%8b%e3%81%ab%e3%81%af&url=https%3a%2f%2fhirtka.github.io%2fpost%2fvscode-wsl2-rust-debug%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <use xlink:href="#twitter"></use>
 </svg>
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fhirtka.github.io%2fcategories%2ftechnology%2f&t=Technology" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fhirtka.github.io%2fpost%2fvscode-wsl2-rust-debug%2f&t=Visual%20Studio%20Code%e3%81%a7WSL2%e4%b8%8a%e3%81%aeRust%e3%82%92Debug%e5%ae%9f%e8%a1%8c%e3%81%99%e3%82%8b%e3%81%ab%e3%81%af" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <use xlink:href="#facebook"></use>
 </svg>
@@ -109,7 +107,7 @@
   <use xlink:href="#linkedin"></use>
 </svg>
     </a>
-    <a href="https://hirtka.github.io/categories/technology/" title="Copy Link" class="link link_yank">
+    <a href="https://hirtka.github.io/post/vscode-wsl2-rust-debug/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <use xlink:href="#copy"></use>
 </svg>
@@ -118,35 +116,236 @@
   </span>
   </div>
 
-    </div>
-      <div class="excerpt_footer">
-        <div>
-          <p class="pale">
-            
-          </p>
-          <a href="https://hirtka.github.io/categories/technology/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
 
-    <li>
-    </li>
-  </ul>
+
+
+    
+    <div class="post_body"><h2 id="はじめに">はじめに</h2>
+<p>Windows上のVisual Studio CodeでWSL上のRustをリモートデバッグするための構成を記します。</p>
+<h2 id="環境">環境</h2>
+<p>以下のバージョンで動作確認しています。</p>
+<h6 id="windows">Windows</h6>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">エディション	Windows 11 Home
+バージョン	21H2
+OS ビルド	22000.376
+</code></pre></div><h6 id="wsl2ubuntu">WSL2/Ubuntu</h6>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.3 LTS
+Release:	20.04
+Codename:	focal
+</code></pre></div><h6 id="rust">Rust</h6>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Default host: x86_64-unknown-linux-gnu
+stable-x86_64-unknown-linux-gnu <span style="color:#f92672">(</span>default<span style="color:#f92672">)</span>
+rustc 1.57.0 <span style="color:#f92672">(</span>f1edd0429 2021-11-29<span style="color:#f92672">)</span>
+</code></pre></div><h6 id="visual-studio-code">Visual Studio Code</h6>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">バージョン: 1.63.2 (user setup)
+</code></pre></div><h2 id="visual-studio-codeにインストールする拡張機能">Visual Studio Codeにインストールする拡張機能</h2>
+<p>以下の2つが必要になります。</p>
+<ul>
+<li>Remote - WSL</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">名前: Remote - WSL
+ID: ms-vscode-remote.remote-wsl
+説明: Open any folder in the Windows Subsystem for Linux (WSL) and take advantage of Visual Studio Code&#39;s full feature set.
+バージョン: 0.63.13
+パブリッシャー: Microsoft
+VS Marketplace リンク: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
+</code></pre></div><ul>
+<li>CodeLLDB</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">名前: CodeLLDB
+ID: vadimcn.vscode-lldb
+説明: A native debugger powered by LLDB.  Debug C++, Rust and other compiled languages.
+バージョン: 1.6.10
+パブリッシャー: Vadim Chugunov
+VS Marketplace リンク: https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
+</code></pre></div><h2 id="使い方">使い方</h2>
+<p>Rustのプロジェクトを作成し、Visual Studio Codeでプロジェクトを開きます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 新規Rustプロジェクト</span>
+$ cargo new rust_project1
+<span style="color:#75715e"># vscodeの起動</span>
+$ code rust_project
+</code></pre></div><p>左下に<code>WSL:Ubuntu</code>とリモート接続されているのを確認しつつ、サイドバーにデバッグ画面を開きます。</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+  <figure>
+    <picture>
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+
+      <img class="image_figure image_internal" src="https://hirtka.github.io/images/vscode-wsl2-rust-debug/vscode-debug.png" alt="Visual Studio Code, debug" loading="lazy" decoding="async" width="880" height="507"  />
+      
+
+    </picture>
+  </figure>
+</p>
+<p>最初に<code>launch.json</code>ファイルを作成します。以下のような出力になります。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;0.2.0&#34;</span>,
+    <span style="color:#f92672">&#34;configurations&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;lldb&#34;</span>,
+            <span style="color:#f92672">&#34;request&#34;</span>: <span style="color:#e6db74">&#34;launch&#34;</span>,
+            <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Debug executable &#39;rust_project1&#39;&#34;</span>,
+            <span style="color:#f92672">&#34;cargo&#34;</span>: {
+                <span style="color:#f92672">&#34;args&#34;</span>: [
+                    <span style="color:#e6db74">&#34;build&#34;</span>,
+                    <span style="color:#e6db74">&#34;--bin=rust_project1&#34;</span>,
+                    <span style="color:#e6db74">&#34;--package=rust_project1&#34;</span>
+                ],
+                <span style="color:#f92672">&#34;filter&#34;</span>: {
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;rust_project1&#34;</span>,
+                    <span style="color:#f92672">&#34;kind&#34;</span>: <span style="color:#e6db74">&#34;bin&#34;</span>
+                }
+            },
+            <span style="color:#f92672">&#34;args&#34;</span>: [],
+            <span style="color:#f92672">&#34;cwd&#34;</span>: <span style="color:#e6db74">&#34;${workspaceFolder}&#34;</span>
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;lldb&#34;</span>,
+            <span style="color:#f92672">&#34;request&#34;</span>: <span style="color:#e6db74">&#34;launch&#34;</span>,
+            <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Debug unit tests in executable &#39;rust_project1&#39;&#34;</span>,
+            <span style="color:#f92672">&#34;cargo&#34;</span>: {
+                <span style="color:#f92672">&#34;args&#34;</span>: [
+                    <span style="color:#e6db74">&#34;test&#34;</span>,
+                    <span style="color:#e6db74">&#34;--no-run&#34;</span>,
+                    <span style="color:#e6db74">&#34;--bin=rust_project1&#34;</span>,
+                    <span style="color:#e6db74">&#34;--package=rust_project1&#34;</span>
+                ],
+                <span style="color:#f92672">&#34;filter&#34;</span>: {
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;rust_project1&#34;</span>,
+                    <span style="color:#f92672">&#34;kind&#34;</span>: <span style="color:#e6db74">&#34;bin&#34;</span>
+                }
+            },
+            <span style="color:#f92672">&#34;args&#34;</span>: [],
+            <span style="color:#f92672">&#34;cwd&#34;</span>: <span style="color:#e6db74">&#34;${workspaceFolder}&#34;</span>
+        }
+    ]
+}
+</code></pre></div><p>ブレークポイントをセットしてデバッグ実行するとブレークしてメモリを参照できます。
+
+
+
+
+
+
+
+
+
+
+
+  <figure>
+    <picture>
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+
+      <img class="image_figure image_internal" src="https://hirtka.github.io/images/vscode-wsl2-rust-debug/vscode-debugging.png" alt="Visual Studio Code, debugging" loading="lazy" decoding="async" width="880" height="634"  />
+      
+
+    </picture>
+  </figure>
+</p>
+
+    </div><div class="post_comments">
+  
+  
+</div>
+
+
+
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     
-    <h2 class="mt-4">Featured Posts</h2>
-    <ul>
-      <li>
-        <a href="https://hirtka.github.io/post/vscode-wsl2-rust-debug/" class="nav-link" title="Visual Studio CodeでWSL2上のRustをDebug実行するには">Visual Studio CodeでWSL2上のRustをDebug実行するには</a>
-      </li>
-    </ul>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
-      <li>
-        <a href="https://hirtka.github.io/post/vscode-wsl2-rust-debug/" class="nav-link" title="Visual Studio CodeでWSL2上のRustをDebug実行するには">Visual Studio CodeでWSL2上のRustをDebug実行するには</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
@@ -183,9 +382,8 @@
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>

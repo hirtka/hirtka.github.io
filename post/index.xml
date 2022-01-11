@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on hirtka&#39;s tech blog</title>
+    <title>Posts on Techopper&#39;s tech blog</title>
     <link>https://hirtka.github.io/post/</link>
-    <description>Recent content in Posts on hirtka&#39;s tech blog</description>
+    <description>Recent content in Posts on Techopper&#39;s tech blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Fri, 31 Dec 2021 05:16:33 +0900</lastBuildDate><atom:link href="https://hirtka.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jan 2022 17:55:17 +0900</lastBuildDate><atom:link href="https://hirtka.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Sample</title>
-      <link>https://hirtka.github.io/post/sample/</link>
-      <pubDate>Fri, 31 Dec 2021 05:16:33 +0900</pubDate>
+      <title>Visual Studio CodeでWSL2上のRustをDebug実行するには</title>
+      <link>https://hirtka.github.io/post/vscode-wsl2-rust-debug/</link>
+      <pubDate>Mon, 10 Jan 2022 17:55:17 +0900</pubDate>
       
-      <guid>https://hirtka.github.io/post/sample/</guid>
+      <guid>https://hirtka.github.io/post/vscode-wsl2-rust-debug/</guid>
       <description>
         
           
-            Insert Lead paragraph here.
+            はじめに Windows上のVisual Studio CodeでWSL上のRustをリモートデバッグするための構成を記します。
+環境 以下のバージョンで動作確認しています。
+Windows エディション	Windows 11 Home バージョン	21H2 OS ビルド	22000.376 WSL2/Ubuntu Distributor ID:	Ubuntu Description:	Ubuntu 20.04.3 LTS Release:	20.04 Codename:	focal Rust Default host: x86_64-unknown-linux-gnu stable-x86_64-unknown-linux-gnu (default) rustc 1.57.0 (f1edd0429 2021-11-29) Visual Studio Code バージョン: 1.63.2 (user setup) Visual Studio Codeにインストールする拡張機能 以下の2つが必要になります。
+ Remote - WSL  名前: Remote - WSL ID: ms-vscode-remote.remote-wsl 説明: Open any folder in the Windows Subsystem for Linux (WSL) and take advantage of Visual Studio Code&amp;#39;s full feature set.
           
           
         

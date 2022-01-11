@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Technology on Techopper&#39;s tech blog</title>
-    <link>https://hirtka.github.io/categories/technology/</link>
-    <description>Recent content in Technology on Techopper&#39;s tech blog</description>
+    <title>wsl on Techopper&#39;s tech blog</title>
+    <link>https://hirtka.github.io/tags/wsl/</link>
+    <description>Recent content in wsl on Techopper&#39;s tech blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 10 Jan 2022 17:55:17 +0900</lastBuildDate><atom:link href="https://hirtka.github.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jan 2022 17:55:17 +0900</lastBuildDate><atom:link href="https://hirtka.github.io/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Visual Studio CodeでWSL2上のRustをDebug実行するには</title>
       <link>https://hirtka.github.io/post/vscode-wsl2-rust-debug/</link>

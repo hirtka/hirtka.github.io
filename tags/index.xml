@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on hirtka&#39;s tech blog</title>
+    <title>Tags on Techopper&#39;s tech blog</title>
     <link>https://hirtka.github.io/tags/</link>
-    <description>Recent content in Tags on hirtka&#39;s tech blog</description>
+    <description>Recent content in Tags on Techopper&#39;s tech blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Fri, 31 Dec 2021 05:16:33 +0900</lastBuildDate><atom:link href="https://hirtka.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jan 2022 17:55:17 +0900</lastBuildDate><atom:link href="https://hirtka.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
